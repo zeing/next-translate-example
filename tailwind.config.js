@@ -1,0 +1,116 @@
+module.exports = {
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontFamily: {
+      display: ['Circular', 'Arial', 'sans-serif'],
+      body: ['Circular', 'Arial', 'sans-serif'],
+    },
+    colors: {
+      transparent: 'transparent',
+      white: '#FFFFFF',
+      black: {
+        DEFAULT: '#04070D',
+        500: '#04070D',
+        400: '#262A31',
+        300: '#3C414D',
+        200: '#5B626F',
+        100: '#858B9A',
+      },
+      gray: {
+        DEFAULT: '#ABB2C2',
+        500: '#ABB2C2',
+        400: '#D0D6E2',
+        300: '#E4E7ED',
+        200: '#F0F2F5',
+        100: '#F7F8FA',
+      },
+      primary: {
+        DEFAULT: '#1A56F0',
+        600: '#0F2764',
+        500: '#0F3AAA',
+        400: '#1A56F0',
+        300: '#2176FF',
+        200: '#A4C4F8',
+        100: '#DBE9FF',
+        hover: '#174ACE',
+      },
+      secondary: {
+        DEFAULT: '#65D2BB',
+        600: '#16826B',
+        500: '#06AB88',
+        400: '#0EBF9A',
+        300: '#65D2BB',
+        200: '#A7ECDE',
+        100: '#DCFAF4',
+      },
+      purple: {
+        DEFAULT: '#3C1E95',
+        600: '#3C1E95',
+        500: '#582AE2',
+        400: '#7D55F6',
+        300: '#A68AFD',
+        200: '#CEBEFE',
+        100: '#ECE7FC',
+      },
+      yellow: {
+        DEFAULT: '#B27718',
+        600: '#B27718',
+        500: '#F59700',
+        400: '#FFB300',
+        300: '#FFCA4C',
+        200: '#FFDF93',
+        100: '#FFF2D3',
+      },
+      red: {
+        DEFAULT: '#A22218',
+        600: '#A22218',
+        500: '#D51404',
+        400: '#EF3526',
+        300: '#FC7166',
+        200: '#FFBAB5',
+        100: '#FFEFED',
+      },
+    },
+    extend: {
+      fontSize: {
+        40: ['40px', '50px'],
+        32: ['32px', '42px'],
+        24: ['24px', '32px'],
+        18: ['18px', '26px'],
+        14: ['14px', '20px'],
+        12: ['12px', '16px'],
+        10: ['10px', '14px'],
+      },
+      transformOrigin: {
+        0: '0%',
+      },
+      zIndex: {
+        '-1': '-1',
+      },
+      height: {
+        fit: 'fit-content',
+      },
+      width: {
+        fit: 'fit-content',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['active', 'hover', 'disabled'],
+      borderColor: [
+        'active',
+        'focus',
+        'disabled',
+        'responsive',
+        'hover',
+        'focus-within',
+      ],
+      backgroundOpacity: ['disabled'],
+      textOpacity: ['disabled'],
+      textColor: ['disabled'],
+    },
+  },
+  plugins: [],
+}
